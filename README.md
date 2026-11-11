@@ -6,7 +6,7 @@ Código do trabalho de graduação da Fatec Ourinhos. A pesquisa compara TF-IDF,
 
 [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/diego-henrique-vaz/avaliacao-de-representacoes-vetoriais-na-identificacao-de-desinformacao/blob/main/TG_FakeRecogna_2022.ipynb)
 
-Execute as células em ordem. O notebook instala as dependências, baixa a planilha da revisão oficial e recompõe o recorte com `particoes_fakerecogna_2022.csv`. O exemplo roda TF-IDF na divisão 42. Para repetir as seis representações nas cinco divisões, selecione GPU no Colab e altere `EXECUTAR_ESTUDO_COMPLETO` para `True`. A extração de BERTimbau, E5 e Qwen3 baixa os pesos públicos dos três modelos. Copie os resultados para um local persistente antes de encerrar a sessão.
+Execute as células em ordem. O notebook instala as dependências e chama `executar_fakerecogna_2022.py` em um novo processo Python para carregar as versões instaladas. O script baixa a planilha da revisão oficial, recompõe o recorte com `particoes_fakerecogna_2022.csv` e roda TF-IDF na divisão 42. Para repetir as seis representações nas cinco divisões, selecione GPU no Colab e altere `EXECUTAR_ESTUDO_COMPLETO` para `True`. A extração de BERTimbau, E5 e Qwen3 baixa os pesos públicos dos três modelos. Copie os resultados para um local persistente antes de encerrar a sessão.
 
 O arquivo `auditoria_fakerecogna_2022.json` registra a origem, os hashes e os filtros. O mapa tem os índices originais, os grupos e as divisões, sem o corpo das notícias. O script `reconstituir_fakerecogna.py` também pode ser chamado na linha de comando. A saída é conferida pelo hash da entrada usada no experimento.
 

@@ -2,6 +2,7 @@ __pycache__/
 .ipynb_checkpoints/
 .env
 execucao_fakerecogna/
+execucao_fakerecogna_2022/
 dados_brutos/
 *.zip
 *.npy
