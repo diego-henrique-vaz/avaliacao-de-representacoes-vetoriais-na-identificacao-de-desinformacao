@@ -1,0 +1,59 @@
+{
+  "bertimbau": {
+    "id": "neuralmind/bert-base-portuguese-cased",
+    "revision": "94d69c95f98f7d5b2a8700c420230ae10def0baa",
+    "dim": 768,
+    "prefix": "",
+    "data_sha256": "e54f1260f24c6783eb99142505fbbd5284c4025c3913bde7f84e798c2c6bc71d",
+    "limit_tokens": 512,
+    "pool": "content_mean",
+    "aggregation": "chunk L2(E5/Qwen); content-token weighted mean; document L2(E5/Qwen)",
+    "precision": "float16",
+    "device": "Tesla T4",
+    "embeddings_sha256": "562cc3d731bce3034d87a8ee658e01fc109e3d9cfa2d66a6beac7aea89576ec7",
+    "shape": [
+      11858,
+      768
+    ],
+    "extraction_seconds": 99.89095601300005,
+    "blocks": 11977
+  },
+  "e5": {
+    "id": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "dim": 384,
+    "prefix": "query: ",
+    "data_sha256": "e54f1260f24c6783eb99142505fbbd5284c4025c3913bde7f84e798c2c6bc71d",
+    "limit_tokens": 512,
+    "pool": "attention_mean",
+    "aggregation": "chunk L2(E5/Qwen); content-token weighted mean; document L2(E5/Qwen)",
+    "precision": "float16",
+    "device": "Tesla T4",
+    "embeddings_sha256": "b2a10ceb5485a3484413c8005ab60ad051b127b25b83ecae22121cc5260cefd5",
+    "shape": [
+      11858,
+      384
+    ],
+    "extraction_seconds": 58.93044041799999,
+    "blocks": 11991
+  },
+  "qwen3": {
+    "id": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "dim": 1024,
+    "prefix": "Instruct: Represent the linguistic and semantic content of this Portuguese news article for news veracity classification.\nQuery:",
+    "data_sha256": "e54f1260f24c6783eb99142505fbbd5284c4025c3913bde7f84e798c2c6bc71d",
+    "limit_tokens": 512,
+    "pool": "last_valid_token",
+    "aggregation": "chunk L2(E5/Qwen); content-token weighted mean; document L2(E5/Qwen)",
+    "precision": "float16",
+    "device": "Tesla T4",
+    "embeddings_sha256": "f498e644277c4cd7886432c7c15ac229d08f0ad4cdf8a2942882796880ea0048",
+    "shape": [
+      11858,
+      1024
+    ],
+    "extraction_seconds": 508.69126372300025,
+    "blocks": 12104
+  }
+}

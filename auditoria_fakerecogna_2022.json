@@ -1,0 +1,83 @@
+{
+  "status": "DADOS_PARTICOES_CONGELADOS",
+  "source_url": "https://raw.githubusercontent.com/Gabriel-Lino-Garcia/FakeRecogna/58f8f6ebd419970527875ba243c9c891781747cd/dataset/FakeRecogna_no_removal_words.xlsx",
+  "source_sha256": "479ab9bdf1ee1d21e298eaaea383b488a8ab9602475b8b205329ec490fd91238",
+  "git_commit": "58f8f6ebd419970527875ba243c9c891781747cd",
+  "version": "original, no_removal_words; texto fornecido já transformado",
+  "text_field": "Noticia, sem Titulo/Subtitulo/URL como atributos",
+  "label_mapping": "1 - Classe: falsa=1, verdadeira=0",
+  "raw_rows": 11902,
+  "eligible_documents": 11858,
+  "groups": 11644,
+  "removed": 44,
+  "conflicting_groups_removed": 22,
+  "near_links": 4,
+  "split_scheme": [
+    {
+      "seed": 42,
+      "train": 9468,
+      "test": 2390,
+      "groups_train": 9315,
+      "groups_test": 2329
+    },
+    {
+      "seed": 43,
+      "train": 9494,
+      "test": 2364,
+      "groups_train": 9315,
+      "groups_test": 2329
+    },
+    {
+      "seed": 44,
+      "train": 9478,
+      "test": 2380,
+      "groups_train": 9315,
+      "groups_test": 2329
+    },
+    {
+      "seed": 45,
+      "train": 9488,
+      "test": 2370,
+      "groups_train": 9315,
+      "groups_test": 2329
+    },
+    {
+      "seed": 46,
+      "train": 9464,
+      "test": 2394,
+      "groups_train": 9315,
+      "groups_test": 2329
+    }
+  ],
+  "data_sha256": "e54f1260f24c6783eb99142505fbbd5284c4025c3913bde7f84e798c2c6bc71d",
+  "class_stats": {
+    "0": {
+      "count": 5929,
+      "median": 87.0,
+      "mean": 97.34204756282678,
+      "min": 1,
+      "max": 1697
+    },
+    "1": {
+      "count": 5929,
+      "median": 61.0,
+      "mean": 68.56147748355541,
+      "min": 1,
+      "max": 1233
+    }
+  },
+  "minimum_200_words": {
+    "0": 191,
+    "1": 151
+  },
+  "minimum_300_words": {
+    "0": 93,
+    "1": 52
+  },
+  "notes": [
+    "Não impor mínimo300, pois excluiria quase toda a classe falsa e mudaria a base sugerida.",
+    "Não chamar o texto fornecido de notícia original intacta: há lematização e remoções anteriores.",
+    "Classificadores não serão utilizados para validar os rótulos.",
+    "Nenhum resultado de modelo observado antes de fixar os dados e divisões."
+  ]
+}

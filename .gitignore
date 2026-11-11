@@ -1,0 +1,9 @@
+__pycache__/
+.ipynb_checkpoints/
+.env
+execucao_fakerecogna/
+dados_brutos/
+*.zip
+*.npy
+*.npz
+*.xlsx
